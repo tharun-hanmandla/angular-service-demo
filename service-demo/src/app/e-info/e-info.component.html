@@ -1,0 +1,18 @@
+<form #frm="ngForm" (ngSubmit)="updateInfo(frm)">
+    <input type="text" name="location" value="" placeholder="location" ngModel>
+    <button type="submit" name="Add">Add Emp1 Info</button>
+</form>
+
+
+<button type="button" name="button" (click)="getEmpInfo1()">Employee-1</button>
+<ul>
+    <li *ngFor="let item of emp1">{{item}}</li>
+</ul>
+<button type="button" name="button" (click)="getEmpInfo2()">Employee-2</button>
+<ul>
+    <li *ngFor="let item of emp2">{{item}}</li>
+</ul>
+<button type="button" name="button" (click)="getEmpInfo3()">Employee-3</button>
+<ul>
+    <li *ngFor="let item of emp3">{{item}}</li>
+</ul>
